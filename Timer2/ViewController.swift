@@ -52,6 +52,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonView: UIButton!
     @IBOutlet weak var landscapeBackground: UIImageView!
     @IBOutlet weak var portraitBackground: UIImageView!
+    @IBOutlet weak var portraitPhoneBackground: UIImageView!
+    @IBOutlet weak var landscapePhoneBackground: UIImageView!
     @IBAction func submit(_ sender: AnyObject) {
         
         if let userEnteredString = userEntry.text {
@@ -137,16 +139,42 @@ class ViewController: UIViewController {
     {
         if(UIDeviceOrientationIsLandscape(UIDevice.current.orientation))
         {
-            print("landscape")
-            landscapeBackground.isHidden = false
-            portraitBackground.isHidden = true
+            if(UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.pad) {
+                //iPad
+                print("Landscape")
+                landscapeBackground.isHidden = false
+                portraitBackground.isHidden = true
+                portraitPhoneBackground.isHidden = true
+                landscapePhoneBackground.isHidden = true
+            }
+            else {
+                //iPhone
+                print("Landscape")
+                landscapeBackground.isHidden = true
+                portraitBackground.isHidden = true
+                portraitPhoneBackground.isHidden = true
+                landscapePhoneBackground.isHidden = false
+            }
         }
         
         if(UIDeviceOrientationIsPortrait(UIDevice.current.orientation))
         {
-            print("Portrait")
-            landscapeBackground.isHidden = true
-            portraitBackground.isHidden = false
+            if(UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.pad) {
+                //iPad
+                print("Portrait")
+                landscapeBackground.isHidden = true
+                portraitBackground.isHidden = false
+                portraitPhoneBackground.isHidden = true
+                landscapePhoneBackground.isHidden = true
+            }
+            else {
+                //iPhone
+                print("Portrait")
+                landscapeBackground.isHidden = true
+                portraitBackground.isHidden = true
+                portraitPhoneBackground.isHidden = false
+                landscapePhoneBackground.isHidden = true
+            }
         }
         
     }
