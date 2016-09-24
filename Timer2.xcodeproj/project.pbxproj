@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8CC200041D91CE9500515EE7 /* soundName.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8CC200031D91CE9500515EE7 /* soundName.mp3 */; };
+		8CC200061D91D98A00515EE7 /* COLOUR_RAY21_RGB.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CC200051D91D98A00515EE7 /* COLOUR_RAY21_RGB.jpg */; };
+		8CC3FB521D91C28D003A7BE4 /* TPRubrikEdge-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3FB511D91C28D003A7BE4 /* TPRubrikEdge-BoldItalic.otf */; };
 		8CE8D55A1D908F5D00438610 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE8D5591D908F5D00438610 /* AppDelegate.swift */; };
 		8CE8D55C1D908F5D00438610 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE8D55B1D908F5D00438610 /* ViewController.swift */; };
 		8CE8D55F1D908F5D00438610 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE8D55D1D908F5D00438610 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8CC200031D91CE9500515EE7 /* soundName.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = soundName.mp3; path = ../../../soundName.mp3; sourceTree = "<group>"; };
+		8CC200051D91D98A00515EE7 /* COLOUR_RAY21_RGB.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = COLOUR_RAY21_RGB.jpg; path = ../../../../Downloads/COLOUR_RAY21_RGB.jpg; sourceTree = "<group>"; };
+		8CC3FB511D91C28D003A7BE4 /* TPRubrikEdge-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TPRubrikEdge-BoldItalic.otf"; path = "../../../../Downloads/Rubrik/TPRubrikEdge-BoldItalic.otf"; sourceTree = "<group>"; };
 		8CE8D5561D908F5D00438610 /* Timer2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timer2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE8D5591D908F5D00438610 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CE8D55B1D908F5D00438610 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +60,9 @@
 		8CE8D5581D908F5D00438610 /* Timer2 */ = {
 			isa = PBXGroup;
 			children = (
+				8CC200051D91D98A00515EE7 /* COLOUR_RAY21_RGB.jpg */,
+				8CC200031D91CE9500515EE7 /* soundName.mp3 */,
+				8CC3FB511D91C28D003A7BE4 /* TPRubrikEdge-BoldItalic.otf */,
 				8CE8D5591D908F5D00438610 /* AppDelegate.swift */,
 				8CE8D55B1D908F5D00438610 /* ViewController.swift */,
 				8CE8D55D1D908F5D00438610 /* Main.storyboard */,
@@ -126,6 +135,9 @@
 			files = (
 				8CE8D5641D908F5D00438610 /* LaunchScreen.storyboard in Resources */,
 				8CE8D5611D908F5D00438610 /* Assets.xcassets in Resources */,
+				8CC3FB521D91C28D003A7BE4 /* TPRubrikEdge-BoldItalic.otf in Resources */,
+				8CC200061D91D98A00515EE7 /* COLOUR_RAY21_RGB.jpg in Resources */,
+				8CC200041D91CE9500515EE7 /* soundName.mp3 in Resources */,
 				8CE8D55F1D908F5D00438610 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,10 +273,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3AACYS355E;
 				INFOPLIST_FILE = Timer2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = im.lew.Timer2;
+				PRODUCT_BUNDLE_IDENTIFIER = im.lew.Timer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -274,10 +287,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3AACYS355E;
 				INFOPLIST_FILE = Timer2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = im.lew.Timer2;
+				PRODUCT_BUNDLE_IDENTIFIER = im.lew.Timer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -302,6 +316,7 @@
 				8CE8D56A1D908F5D00438610 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
