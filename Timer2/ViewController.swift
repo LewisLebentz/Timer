@@ -8,7 +8,7 @@
 
 import UIKit
 import AVFoundation
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     
     var number = 0
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var portraitPhoneBackground: UIImageView!
     @IBOutlet weak var landscapePhoneBackground: UIImageView!
     @IBAction func submit(_ sender: AnyObject) {
-        
+        dismissKeyboard()
         if let userEnteredString = userEntry.text {
             if let userEnteredInteger = Int(userEnteredString) {
                 number = userEnteredInteger
@@ -195,6 +195,7 @@ class ViewController: UIViewController {
                 landscapePhoneBackground.isHidden = true
             }
         }
+    
         
     }
 
@@ -205,7 +206,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
         time.isHidden = true
         labeltwo.isHidden = true
         rotated()
@@ -215,7 +215,7 @@ class ViewController: UIViewController {
         view.addGestureRecognizer(tap)
         
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.rotated), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
-        
+
         
     }
     
