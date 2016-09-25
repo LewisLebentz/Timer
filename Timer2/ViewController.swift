@@ -100,7 +100,8 @@ class ViewController: UIViewController {
             number -= 1
             
             time.text = String(number)
-            print("Attempt \(number)")
+            print(number)
+            playSound2()
             
         } else {
             
@@ -134,6 +135,24 @@ class ViewController: UIViewController {
         }
     }
     
+    func playSound2() {
+        let url = Bundle.main.url(forResource: "soundName2", withExtension: "mp3")!
+        
+        if (player?.isPlaying == true) {
+            print("Playing")
+        }
+        else{
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            guard let player = player else { return }
+            
+            player.prepareToPlay()
+            player.play()
+        } catch let error as NSError {
+            print(error.description)
+        }
+    }
+    }
 
     func rotated()
     {

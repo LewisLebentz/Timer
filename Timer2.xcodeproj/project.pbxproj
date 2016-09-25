@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C46B50E1D97E80F005E0636 /* soundName2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8C46B50D1D97E80F005E0636 /* soundName2.mp3 */; };
 		8CC200041D91CE9500515EE7 /* soundName.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8CC200031D91CE9500515EE7 /* soundName.mp3 */; };
 		8CC200061D91D98A00515EE7 /* COLOUR_RAY21_RGB.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CC200051D91D98A00515EE7 /* COLOUR_RAY21_RGB.jpg */; };
 		8CC3FB521D91C28D003A7BE4 /* TPRubrikEdge-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3FB511D91C28D003A7BE4 /* TPRubrikEdge-BoldItalic.otf */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C46B50D1D97E80F005E0636 /* soundName2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = soundName2.mp3; path = ../../../../Downloads/soundName2.mp3; sourceTree = "<group>"; };
 		8CC200031D91CE9500515EE7 /* soundName.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = soundName.mp3; path = ../../../soundName.mp3; sourceTree = "<group>"; };
 		8CC200051D91D98A00515EE7 /* COLOUR_RAY21_RGB.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = COLOUR_RAY21_RGB.jpg; path = ../../../../Downloads/COLOUR_RAY21_RGB.jpg; sourceTree = "<group>"; };
 		8CC3FB511D91C28D003A7BE4 /* TPRubrikEdge-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TPRubrikEdge-BoldItalic.otf"; path = "../../../../Downloads/Rubrik/TPRubrikEdge-BoldItalic.otf"; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				8CC200051D91D98A00515EE7 /* COLOUR_RAY21_RGB.jpg */,
 				8CC200031D91CE9500515EE7 /* soundName.mp3 */,
+				8C46B50D1D97E80F005E0636 /* soundName2.mp3 */,
 				8CC3FB511D91C28D003A7BE4 /* TPRubrikEdge-BoldItalic.otf */,
 				8CE8D5591D908F5D00438610 /* AppDelegate.swift */,
 				8CE8D55B1D908F5D00438610 /* ViewController.swift */,
@@ -100,7 +103,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Lewis Lebentz";
 				TargetAttributes = {
 					8CE8D5551D908F5D00438610 = {
@@ -133,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C46B50E1D97E80F005E0636 /* soundName2.mp3 in Resources */,
 				8CE8D5641D908F5D00438610 /* LaunchScreen.storyboard in Resources */,
 				8CE8D5611D908F5D00438610 /* Assets.xcassets in Resources */,
 				8CC3FB521D91C28D003A7BE4 /* TPRubrikEdge-BoldItalic.otf in Resources */,
@@ -194,6 +198,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -244,6 +249,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
